@@ -1,0 +1,227 @@
+div {
+    font-family:Roboto,arial;
+}
+
+.header-image {
+    position:absolute;
+    left:0;
+    top:0;
+    width:1903px;
+    height:480px;
+    object-fit:cover;
+    object-position:center;
+}
+
+.force-image {
+    position:absolute;
+    right:192px;
+    top:112px;
+}
+
+.header-top {
+    position:fixed;
+}
+
+.container {
+    position:relative;
+    text-align:center;
+    top:175px;
+}
+
+.intro-text {
+    font-size:48px;
+    font-weight:bold;
+    color:purple;
+}
+
+.dashboard-button {
+    position:relative;
+    top:-50px;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+
+    transition: opacity 0.5s;
+}
+
+.dashboard-text {
+    color: black;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.dashboard-button:hover .menu-container {
+    opacity:1;
+}
+
+.name {
+    position:relative;
+    color:black;
+    left:136px;
+    top:-94px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.portfolio-container {
+    width:1000px;
+    position:absolute;
+    left:500px;
+    top:150px;
+}
+
+.introduction-text {
+    position:relative;
+    top:384px;
+    font-size:20px;
+    line-height:32px;
+    font-weight:bold;
+}
+
+.portfolio-text11 {
+    position:relative;
+    top:432px;
+    font-size:20px;
+    line-height:32px;
+}
+
+.portfolio-text {
+    position:relative;
+    top:400px;
+    font-size:20px;
+    line-height:32px;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.portfolio-text2 {
+    position:relative;
+    font-size:20px;
+    line-height:32px;
+    top:464px;
+}
+
+.portfolio-text3 {
+    position:absolute;
+    font-size:20px;
+    line-height:32px;
+    top:96px;
+}
+
+.portfolio-text5 {
+    position:relative;
+    top:352px;
+}
+
+.portfolio-text4 {
+    position:relative;
+    font-size:20px;
+    line-height:32px;
+    top:1200px;
+}
+
+.portfolio-text6 {
+    position:relative;
+    top:32px;
+}
+
+.portfolio-text7 {
+    position:relative;
+    top:416px;
+}
+
+.portfolio-text8 {
+    position:relative;
+    top:448px;
+}
+
+.portfolio-text9 {
+    position:relative;
+    top:832px;
+}
+
+.portfolio-text10 {
+    position:relative;
+    top:1232px;
+}
+
+.portfolio-text12 {
+    position:relative;
+    top:1232px;
+}
+
+.airplane-picture {
+    position:absolute;
+    top:1100px;
+    left:300px;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:white;
+    opacity:0;
+    transition: opacity 0.5s;
+    position:fixed;
+}
+
+.menu-container:hover {
+    opacity:1;
+}
+
+.menu-page {
+    display:flex;
+    justify-content:start;
+    position:relative;
+    top:0;
+    width:300px;
+    height:1000px;
+    flex-direction:column;
+    margin-left:40px;
+    margin-top:10px;
+}
+
+.menu-overlay {
+    z-index: 9999;
+    margin: 30px;
+    background: white;
+}
+
+.home-page, .physics-page, .safety-page, .graphic-page, .animation-page, .audio-page, .modelling-page, .logo-page {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.home-page, .safety-page, .graphic-page, .audio-page, .modelling-page, .animation-page, .logo-page, .physics-page {
+    font-weight:bold;
+}
+
+.air-button, .mass-button, .friction-button, .aerodynamics-button, .boyle-button, .inertia-button, .speed-button {
+    position:relative;
+    top:1800px;
+    margin-right:56px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:20px;
+    padding-left:20px;
+    background-color:white;
+    font-size:large;
+}
+
+.air-paragraph, .mass-paragraph, .friction-paragraph, .aerodynamics-paragraph, .boyle-paragraph, .inertia-paragraph, .speed-paragraph {
+    text-decoration:none;
+    color:black;
+}
+
+.description-text {
+    position:relative;
+    top:1132px;
+    left:248px;
+    font-size:16px;
+}
+
+.home-page:hover, .safety-page:hover, .graphic-page:hover, .logo-page:hover, .audio-page:hover, .modelling-page:hover, .animation-page:hover, .physics-page:hover {
+    opacity:0.7;
+}
