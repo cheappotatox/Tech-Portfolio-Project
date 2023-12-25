@@ -1,0 +1,257 @@
+div {
+    font-family:Roboto,arial;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-button {
+    flex: 0 0 auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.name {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    top: 175px;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    margin-top: -400px;
+}
+
+.dashboard-text {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashboard-button:hover .menu-container {
+    opacity: 1;
+}
+
+.portfolio-container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.portfolio-heading,
+.portfolio-body,
+.portfolio-paragraph,
+.portfolio-paragraph2 {
+    position: relative;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.portfolio-paragraph2 {
+    margin-top: 32px;
+}
+
+.portfolio-heading {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: fixed;
+}
+
+.menu-container:hover {
+    opacity: 1;
+}
+
+.menu-page {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 800px;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.menu-overlay {
+    z-index: 9999;
+    margin: 30px;
+    background: white;
+}
+
+.home-page,
+.physics-page,
+.safety-page,
+.graphic-page,
+.animation-page,
+.audio-page,
+.modelling-page,
+.logo-page,
+.slideshow-page,
+.result-page {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page:hover,
+.safety-page:hover,
+.graphic-page:hover,
+.logo-page:hover,
+.audio-page:hover,
+.modelling-page:hover,
+.animation-page:hover,
+.physics-page:hover,
+.slideshow-page:hover,
+.result-page {
+    opacity: 0.7;
+}
+
+.general-button,
+.disc-button,
+.scroll-button,
+.band-button,
+.drill-button,
+.mitre-button,
+.jointer-button,
+.thickness-button,
+.table-button,
+.router-button,
+.wood-button {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    font-size: large;
+    margin-left: 2.5%;
+    margin-bottom: 10px; /* Add margin between buttons */
+    left: 14%;
+}
+
+/* Add a general style for button paragraphs */
+.general-paragraph,
+.disc-paragraph,
+.scroll-paragraph,
+.band-paragraph,
+.drill-paragraph,
+.mitre-paragraph,
+.jointer-paragraph,
+.thickness-paragraph,
+.table-paragraph,
+.router-paragraph,
+.wood-paragraph {
+    text-decoration: none;
+    color: black;
+}
+
+.disc-image {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.home-page:hover, .safety-page:hover, .graphic-page:hover, .logo-page:hover, .audio-page:hover, .modelling-page:hover, .animation-page:hover, .physics-page:hover {
+    opacity:0.7;
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolio-container {
+        padding: 0 10px;
+    }
+
+    .portfolio-heading,
+    .portfolio-body,
+    .portfolio-paragraph,
+    .portfolio-paragraph2 {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .intro-text {
+        font-size: 36px;
+        margin-top: -300px;
+    }
+
+    .general-button,
+    .disc-button,
+    .scroll-button,
+    .band-button,
+    .drill-button,
+    .mitre-button,
+    .jointer-button,
+    .thickness-button,
+    .table-button,
+    .router-button,
+    .wood-button {
+        width: 50%; /* Make buttons take full width */
+        margin-left: 14%; /* Remove left margin */
+    }
+
+    .general-paragraph,
+    .disc-paragraph,
+    .scroll-paragraph,
+    .band-paragraph,
+    .drill-paragraph,
+    .mitre-paragraph,
+    .jointer-paragraph,
+    .thickness-paragraph,
+    .table-paragraph,
+    .router-paragraph,
+    .wood-paragraph {
+        display: block; /* Ensure paragraphs stack vertically */
+        margin-bottom: 10px; /* Add margin between paragraphs */
+    }
+}
