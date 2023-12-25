@@ -36,7 +36,7 @@ div {
     transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: bold;
-    color: black;
+    color: purple;
     z-index: 1;
     margin-top: -400px;
 }
@@ -76,8 +76,10 @@ div {
 }
 
 .video {
-    position:relative;
-    top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh; /* Optional: Set a specific height for the container */
 }
 
 .portfolio-heading,
@@ -88,6 +90,7 @@ div {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 32px;
+    margin-top: 32px;
 }
 
 .portfolio-paragraph2 {
