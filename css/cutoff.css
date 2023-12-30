@@ -12,7 +12,12 @@ div {
     margin-right: auto;
 }
 
-.dragster-dimensions {
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.cutoff-image {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -20,11 +25,6 @@ div {
     width: 50%;
     margin-top: 32px;
     margin-bottom: 32px;
-}
-
-.header-top {
-    display: flex;
-    align-items: center;
 }
 
 .container {
@@ -46,7 +46,7 @@ div {
     transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: bold;
-    color: purple;
+    color: white;
     z-index: 1;
     margin-top: -400px;
 }
@@ -85,13 +85,6 @@ div {
     opacity: 1;
 }
 
-.video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 24vh; /* Optional: Set a specific height for the container */
-}
-
 .portfolio-heading,
 .portfolio-body,
 .portfolio-paragraph,
@@ -100,7 +93,6 @@ div {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 32px;
-    margin-top: 32px;
 }
 
 .portfolio-paragraph2 {
@@ -150,15 +142,8 @@ div {
 }
 
 .home-page,
-.physics-page,
 .safety-page,
-.graphic-page,
-.animation-page,
-.audio-page,
-.modelling-page,
-.logo-page,
-.slideshow-page,
-.result-page {
+.cutoff-page {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -168,7 +153,7 @@ div {
     position:fixed;
 }
 
-.home-page:hover, .safety-page:hover, .graphic-page:hover, .logo-page:hover, .audio-page:hover, .modelling-page:hover, .animation-page:hover, .physics-page:hover, .slideshow-page:hover, .result-page:hover {
+.home-page:hover, .safety-page:hover, .cutoff-page:hover {
     opacity:0.7;
 }
 
