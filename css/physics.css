@@ -1,130 +1,121 @@
 div {
-    font-family:Roboto,arial;
+    font-family: Roboto, Arial;
 }
 
 .header-image {
-    position:absolute;
-    left:0;
-    top:0;
-    width:1903px;
-    height:480px;
-    object-fit:cover;
-    object-position:center;
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container {
-    position:relative;
-    text-align:center;
-    top:175px;
-}
-
-.intro-text {
-    font-size:48px;
-    font-weight:bold;
-    color:purple;
+.header-top {
+    position: fixed;
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
 .dashboard-button {
-    position:relative;
-    top:-50px;
-    border:none;
-    background-color:transparent;
-    cursor:pointer;
-
+    flex: 0 0 auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     transition: opacity 0.5s;
-}
-
-.dashboard-text {
-    color: white;
-    font-size:20px;
-    font-weight:bold;
-}
-
-.dashboard-button:hover .menu-container {
-    opacity:1;
+    vertical-align: middle; /* Align vertically to middle */
 }
 
 .name {
-    position:relative;
-    color:white;
-    left:136px;
-    top:-94px;
-    font-weight:bold;
-    font-size:20px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    top: 175px;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: purple;
+    z-index: 1;
+    margin-top: -400px;
+}
+
+.dashboard-text {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashboard-button:hover .menu-container {
+    opacity: 1;
 }
 
 .portfolio-container {
-    width:1000px;
-    position:absolute;
-    left:500px;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.introduction-text {
-    position:relative;
-    top:384px;
-    font-size:20px;
-    line-height:32px;
-    font-weight:bold;
+.portfolio-heading,
+.portfolio-body,
+.portfolio-paragraph,
+.portfolio-paragraph2 {
+    position: relative;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 32px;
 }
 
-.portfolio-text {
-    position:relative;
-    top:400px;
-    font-size:20px;
-    line-height:32px;
+.portfolio-paragraph2 {
+    margin-top: 32px;
 }
 
-.portfolio-text2 {
-    position:relative;
-    font-size:20px;
-    line-height:32px;
-    top:432px;
+.portfolio-heading {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-.portfolio-text3 {
-    position:absolute;
-    font-size:20px;
-    line-height:32px;
-    top:128px;
-}
-
-.portfolio-text4 {
-    position:relative;
-    font-size:20px;
-    line-height:32px;
-    top:232px;
-}
-
-.airplane-picture {
-    position:absolute;
-    top:80px;
-    left:300px;
+.small-text {
+    font-size: 14px;
+    display: inline-block;
 }
 
 .menu-container {
     position: absolute;
     top: 0;
     left: 0;
-    background-color:white;
-    opacity:0;
+    background-color: white;
+    opacity: 0;
     transition: opacity 0.5s;
-    position:fixed;
+    position: fixed;
 }
 
 .menu-container:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 .menu-page {
-    display:flex;
-    justify-content:start;
-    position:relative;
-    top:0;
-    width:300px;
-    height:1000px;
-    flex-direction:column;
-    margin-left:40px;
-    margin-top:10px;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 1000px;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 10px;
 }
 
 .menu-overlay {
@@ -148,33 +139,84 @@ div {
     font-weight: bold;
 }
 
-.safety-info {
-    margin-left:50px;
-    opacity:0;
-    transition: opacity 0.5s;
+.home-page:hover,
+.safety-page:hover,
+.graphic-page:hover,
+.logo-page:hover,
+.audio-page:hover,
+.modelling-page:hover,
+.animation-page:hover,
+.physics-page:hover,
+.slideshow-page:hover,
+.result-page {
+    opacity: 0.7;
 }
 
-.safety-info:hover {
-    opacity:1;
+.boyle-button,
+.mass-button,
+.friction-button,
+.air-button {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    font-size: large;
+    margin-bottom: 10px; /* Add margin between buttons */
 }
 
-.air-button, .mass-button, .friction-button, .aerodynamics-button, .boyle-button, .inertia-button, .speed-button {
-    position:relative;
-    top:500px;
-    margin-right: 12%;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-right:20px;
-    padding-left:20px;
-    background-color:white;
-    font-size:large;
+.mass-button,
+.friction-button,
+.air-button {
+    margin-left: 12%;
 }
 
-.air-paragraph, .mass-paragraph, .friction-paragraph, .aerodynamics-paragraph, .boyle-paragraph, .inertia-paragraph, .speed-paragraph {
-    text-decoration:none;
-    color:black;
+/* Add a general style for button paragraphs */
+.boyle-paragraph,
+.mass-paragraph,
+.friction-paragraph,
+.air-paragraph {
+    text-decoration: none;
+    color: black;
 }
 
-.home-page:hover, .safety-page:hover, .graphic-page:hover, .logo-page:hover, .audio-page:hover, .modelling-page:hover, .animation-page:hover, .physics-page:hover, .slideshow-page:hover, .result-page:hover {
+.home-page:hover, .safety-page:hover, .graphic-page:hover, .logo-page:hover, .audio-page:hover, .modelling-page:hover, .animation-page:hover, .physics-page:hover {
     opacity:0.7;
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolio-container {
+        padding: 0 10px;
+    }
+
+    .portfolio-heading,
+    .portfolio-body,
+    .portfolio-paragraph,
+    .portfolio-paragraph2 {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .intro-text {
+        font-size: 36px;
+        margin-top: -300px;
+    }
+
+    .boyle-button,
+    .mass-button,
+    .friction-button,
+    .air-button {
+        width: 50%; /* Make buttons take full width */
+        margin-left: 14%; /* Remove left margin */
+    }
+
+    .boyle-paragraph,
+    .mass-paragraph,
+    .friction-paragraph,
+    .air-paragraph {
+        display: block; /* Ensure paragraphs stack vertically */
+        margin-bottom: 10px; /* Add margin between paragraphs */
+    }
 }

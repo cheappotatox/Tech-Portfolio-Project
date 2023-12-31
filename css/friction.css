@@ -170,6 +170,12 @@ div {
     background: white;
 }
 
+.video-link {
+    position: relative;
+    left: 15%;
+    top: 100%;
+}
+
 .home-page,
 .physics-page,
 .safety-page,
@@ -185,37 +191,6 @@ div {
     font-weight: bold;
 }
 
-.air-button,
-.mass-button,
-.friction-button,
-.aerodynamics-button,
-.boyle-button {
-    position: relative;
-    margin-top: 30px;
-    margin-right: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: white;
-    font-size: large;
-}
-
-.air-paragraph,
-.mass-paragraph,
-.friction-paragraph,
-.aerodynamics-paragraph,
-.boyle-paragraph {
-    text-decoration: none;
-    color: black;
-}
-
-.description-text {
-    position: relative;
-    left: 30%;
-    font-size: 16px;
-}
-
 .home-page:hover,
 .safety-page:hover,
 .graphic-page:hover,
@@ -224,20 +199,46 @@ div {
 .modelling-page:hover,
 .animation-page:hover,
 .physics-page:hover,
-.result-page:hover{
+.slideshow-page:hover,
+.result-page {
     opacity: 0.7;
 }
 
-.video-link {
+.boyle-button,
+.mass-button,
+.friction-button,
+.air-button {
     position: relative;
-    left: 15%;
-    top: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    font-size: large;
+    margin-bottom: 10px; /* Add margin between buttons */
 }
 
-/* Add responsive styles here */
-@media only screen and (max-width: 768px) {
+.mass-button,
+.friction-button,
+.air-button {
+    margin-left: 12%;
+}
+
+/* Add a general style for button paragraphs */
+.boyle-paragraph,
+.mass-paragraph,
+.friction-paragraph,
+.air-paragraph {
+    text-decoration: none;
+    color: black;
+}
+
+.home-page:hover, .safety-page:hover, .graphic-page:hover, .logo-page:hover, .audio-page:hover, .modelling-page:hover, .animation-page:hover, .physics-page:hover {
+    opacity:0.7;
+}
+
+@media only screen and (max-width: 1024px) {
     .portfolio-container {
-        max-width: 100%;
         padding: 0 10px;
     }
 
@@ -250,21 +251,24 @@ div {
         margin-bottom: 15px;
     }
 
-    .header-image {
-        height: auto;
-    }
-
     .intro-text {
         font-size: 36px;
         margin-top: -300px;
     }
 
-    .name {
-        left: 10px;
+    .boyle-button,
+    .mass-button,
+    .friction-button,
+    .air-button {
+        width: 50%; /* Make buttons take full width */
+        margin-left: 14%; /* Remove left margin */
     }
 
-    .container {
-        top: 50px;
+    .boyle-paragraph,
+    .mass-paragraph,
+    .friction-paragraph,
+    .air-paragraph {
+        display: block; /* Ensure paragraphs stack vertically */
+        margin-bottom: 10px; /* Add margin between paragraphs */
     }
 }
-
