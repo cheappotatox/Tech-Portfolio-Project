@@ -93,30 +93,17 @@ div {
 }
 
 .portfolio-heading,
-.portfolio-body,
-.portfolio-paragraph,
-.portfolio-paragraph2 {
+.portfolio-body {
     position: relative;
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 32px;
-    margin-top: 32px;
-}
-
-.portfolio-paragraph2 {
-    margin-top: 32px;
-}
-
-.portfolio-text {
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 .portfolio-heading {
     font-weight: bold;
     text-decoration: underline;
 }
-
 .menu-container {
     position: absolute;
     top: 0;
