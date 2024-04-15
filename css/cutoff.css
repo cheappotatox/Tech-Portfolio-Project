@@ -17,7 +17,8 @@ div {
     align-items: center;
 }
 
-.cutoff-image {
+.cutoff-image,
+.modelling-image {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -131,8 +132,11 @@ div {
 }
 
 .home-page,
+.chessboard-page,
 .safety-page,
-.cutoff-page {
+.cutoff-page,
+.process-page,
+.slideshow-page {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -142,7 +146,7 @@ div {
     position:fixed;
 }
 
-.home-page:hover, .safety-page:hover, .cutoff-page:hover {
+.home-page:hover, .chessboard-page:hover, .safety-page:hover, .cutoff-page:hover, .process-page:hover, .slideshow-page:hover {
     opacity:0.7;
 }
 

@@ -113,31 +113,17 @@ div {
 }
 
 .home-page,
-.physics-page,
+.dragster-page,
+.chessboard-page,
 .safety-page,
-.graphic-page,
-.animation-page,
-.audio-page,
-.modelling-page,
-.logo-page,
-.slideshow-page,
-.result-page {
+.slideshow-page {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.home-page:hover,
-.safety-page:hover,
-.graphic-page:hover,
-.logo-page:hover,
-.audio-page:hover,
-.modelling-page:hover,
-.animation-page:hover,
-.physics-page:hover,
-.slideshow-page:hover,
-.result-page {
-    opacity: 0.7;
+.home-page:hover, .dragster-page:hover, .chessboard-page:hover, .safety-page:hover, .slideshow-page:hover {
+    opacity:0.7;
 }
 
 .general-button,

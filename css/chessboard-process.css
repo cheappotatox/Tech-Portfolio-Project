@@ -12,22 +12,6 @@ div {
     margin-right: auto;
 }
 
-.chessboard-image {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 50%;
-    margin-top: 32px;
-    margin-bottom: 32px;
-
-    transition: opacity, 0.5s;
-}
-
-.chessboard-image:hover {
-    opacity: 0.7;
-}
-
 .header-top {
     display: flex;
     align-items: center;
@@ -38,6 +22,24 @@ div {
     text-align:center;
     top:175px;
     color:white;
+}
+
+.maple-image,
+.rosewood-image,
+.glue-image,
+.sanding-machine {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.intro-text {
+    font-size:48px;
+    font-weight:bold;
 }
 
 .intro-text {
@@ -132,9 +134,10 @@ div {
 }
 
 .home-page,
-.dragster-page,
 .chessboard-page,
 .safety-page,
+.cutoff-page,
+.process-page,
 .slideshow-page {
     text-decoration: none;
     color: black;
@@ -145,7 +148,7 @@ div {
     position:fixed;
 }
 
-.home-page:hover, .dragster-page:hover, .chessboard-page:hover, .safety-page:hover, .slidshow-page:hover {
+.home-page:hover, .chessboard-page:hover, .safety-page:hover, .cutoff-page:hover, .process-page:hover, .slideshow-page:hover {
     opacity:0.7;
 }
 
